@@ -5,12 +5,12 @@ export type ObjectModel = {
 
 export const Parrot: ObjectModel = {
   name: 'Parrot',
-  href: '/models/Parrot.glb',
+  href: '/objects/Parrot.glb',
 };
 
 export const Stork: ObjectModel = {
   name: 'Stork',
-  href: '/models/Stork.glb',
+  href: '/objects/Stork.glb',
 };
 
 export const allObjects: ObjectModel[] = [Stork, Parrot];

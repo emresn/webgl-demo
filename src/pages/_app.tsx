@@ -2,14 +2,8 @@ import { AppProps } from 'next/app';
 
 import '@/styles/globals.css';
 
-import Layout from '@/components/layout/Layout';
-
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
