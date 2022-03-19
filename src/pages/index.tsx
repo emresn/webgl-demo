@@ -33,12 +33,12 @@ const HomePage = () => {
   );
 
   return (
-    <div className='bg-zinc-800 flex flex-col items-start min-h-screen min-w-screen'>
-      <div className='flex flex-row justify-between p-4 text-center text-white w-full'>
+    <div className='bg-zinc-800 min-w-screen flex flex-col items-start min-h-screen'>
+      <div className='flex flex-row justify-between p-4 w-full text-center text-white'>
         <h3> WebGL Demo</h3>
         {buildControlPanel}
       </div>
-      <div className='flex flex-auto flex-row items-stretch w-full'>
+      <div className='flex flex-row flex-auto items-stretch w-full'>
         <LeftMenuView
           selectedIndex={selectedIndex}
           setSelectedIndex={setSelectedIndex}

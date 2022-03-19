@@ -6,7 +6,7 @@ export default function NotFoundPage() {
   return (
     <main>
       <section className='bg-white'>
-        <div className='flex flex-col items-center justify-center layout min-h-screen text-black text-center'>
+        <div className='layout flex flex-col justify-center items-center min-h-screen text-center text-black'>
           <RiAlarmWarningFill
             size={60}
             className='animate-flicker drop-shadow-glow text-red-500'
