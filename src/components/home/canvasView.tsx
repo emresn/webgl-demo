@@ -26,7 +26,7 @@ const CanvasView = ({
   return (
     <Canvas
       camera={{ position: [0, 0, 5], fov: 30 }}
-      className='bg-gradient-to-br from-white rounded-3xl to-gray-500'
+      className='bg-gradient-to-br from-white to-gray-500 rounded-3xl'
     >
       <ambientLight intensity={0.2} />
       <directionalLight color='white' position={[0, 0, 5]} />

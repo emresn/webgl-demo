@@ -9,8 +9,8 @@ type Props = {
 
 const LeftMenuView = ({ selectedIndex, setSelectedIndex }: Props) => {
   return (
-    <div className='flex flex-col gap-4 items-center py-4 text-gray-50 w-1/6'>
-      <div className='text-center w-full'>
+    <div className='flex flex-col gap-4 items-center py-4 w-1/6 text-gray-50'>
+      <div className='w-full text-center'>
         <h4>Models</h4>
         <hr className='mx-2' />
       </div>
