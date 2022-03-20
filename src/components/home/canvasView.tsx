@@ -25,8 +25,8 @@ const CanvasView = ({
 }: Props) => {
   return (
     <Canvas
-      camera={{ position: [0, 0, 5], fov: 30 }}
-      className='bg-gradient-to-br from-white to-gray-500 rounded-3xl'
+      camera={{ position: [5, 5, 5], fov: 30 }}
+      className='bg-gradient-to-br from-white rounded-3xl to-gray-500'
     >
       <ambientLight intensity={0.2} />
       <directionalLight color='white' position={[0, 0, 5]} />
@@ -42,7 +42,10 @@ const CanvasView = ({
           <Suspense fallback={<Loader />}>
             <ObjectWidget url={object.href} />
             {isOrbitControlActive && <OrbitControls />}
-            <Environment preset='sunset' background={isEnviromentActive} />
+            <Environment
+              preset={object.preset ?? 'city'}
+              background={isEnviromentActive && object.preset !== undefined}
+            />
           </Suspense>
         </mesh>
       </TransformControls>
