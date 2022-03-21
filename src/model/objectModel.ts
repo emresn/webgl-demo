@@ -4,6 +4,7 @@ export type ObjectModel = {
   name: string;
   href: string;
   preset?: PresetsType;
+  isShadow?: boolean;
 };
 
 export const Parrot: ObjectModel = {
@@ -21,10 +22,13 @@ export const Stork: ObjectModel = {
 export const Mouse: ObjectModel = {
   name: 'Mouse',
   href: '/objects/mouse.glb',
+  isShadow: true,
 };
-export const Mercedes: ObjectModel = {
-  name: 'Mercedes',
-  href: '/objects/mercedes.glb',
+export const Mercedes200: ObjectModel = {
+  name: 'Mercedes-200',
+  href: '/objects/mercedes200.glb',
+
+  isShadow: true,
 };
 
-export const allObjects: ObjectModel[] = [Stork, Parrot, Mouse, Mercedes];
+export const allObjects: ObjectModel[] = [Stork, Parrot, Mouse, Mercedes200];
